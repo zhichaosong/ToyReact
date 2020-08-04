@@ -1,0 +1,27 @@
+{
+  "name": "ToyReact",
+  "version": "1.0.0",
+  "description": "- 亲自动手实现一个极简的 React 框架，也可以叫它 mini-React，了解框架搭建全过程，掌握 React 框架背后的原理及组件化思想",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhichaosong/ToyReact.git"
+  },
+  "author": "zhichaosong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhichaosong/ToyReact/issues"
+  },
+  "homepage": "https://github.com/zhichaosong/ToyReact#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1"
+  }
+}

@@ -1,9 +1,25 @@
-import {ToyReact} from "./ToyReact";
+import {ToyReact, Component} from "./ToyReact";
+class MyComponent extends Component{
+  render(){
+    // return <div>cool</div>;
+    return <div>
+      {this.children}
+      <span>hello</span>
+      {false}
+      <span>world</span>
+    </div>;
+  }
+}
+let a = <MyComponent id="myDiv" name="divName">
+  <div>1</div>
+  <div>2</div>
+  <div>
+    {true}
+    <span>3</span>
+  </div>
+</MyComponent>;
 
-let a = <div id="myDiv" name="divName">
-  <span>s1</span>
-  <span>s2</span>
-  <span>s3</span>
-</div>;
-
-document.body.appendChild(a);
+ToyReact.render(
+  a,
+  document.body
+);
